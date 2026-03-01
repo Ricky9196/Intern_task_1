@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Personal Portfolio Website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Ricky Martin | Web Developer</title>
+
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -17,6 +20,9 @@
     <header>
       <h1>Ricky Martin</h1>
       <p>Beginner Web Developer</p>
+
+      <!-- Dark Mode Button -->
+      <button id="darkModeToggle" class="toggle-btn">🌙 Dark Mode</button>
 
       <nav>
         <ul>
@@ -46,14 +52,18 @@
         </p>
 
         <p>
-          This portfolio is a sample project showcasing my progress and
-          understanding of basic web development concepts.
+          This portfolio showcases my progress and understanding of modern web
+          development concepts including responsive design and JavaScript
+          interactivity.
         </p>
       </section>
 
       <!-- Skills Section -->
       <section id="skills">
         <h2>My Skills</h2>
+
+        <!-- Toggle Skills Button -->
+        <button id="toggleSkills" class="toggle-btn">Show / Hide Skills</button>
 
         <ul>
           <li>HTML5</li>
@@ -68,16 +78,15 @@
       <section id="contact">
         <h2>Contact Me</h2>
 
-        <form action="#" method="post">
-          <label for="name">Full Name:</label><br />
-          <input type="text" id="name" name="name" required /><br /><br />
+        <form action="#" method="post" novalidate>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" />
 
-          <label for="email">Email Address:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" />
 
-          <label for="message">Message:</label><br />
-          <textarea id="message" name="message" rows="5" required></textarea
-          ><br /><br />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5"></textarea>
 
           <button type="submit">Send Message</button>
         </form>
@@ -86,16 +95,28 @@
 
     <!-- Footer Section -->
     <footer>
-      <p>&copy; 2026 Your Name. All rights reserved.</p>
+      <p>&copy; 2026 Ricky Martin. All rights reserved.</p>
 
       <p>
-        <a href="https://github.com/Ricky9196" target="_blank">GitHub</a> |
+        <a
+          href="https://github.com/Ricky9196"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        |
         <a
           href="https://www.linkedin.com/in/ricky-martin-ap-674b3225b/"
           target="_blank"
-          >LinkedIn</a
+          rel="noopener noreferrer"
         >
+          LinkedIn
+        </a>
       </p>
     </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
   </body>
 </html>
